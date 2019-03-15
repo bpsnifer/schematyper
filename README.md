@@ -38,6 +38,10 @@ Can be used with [`go generate`](https://blog.golang.org/generate):
 //go:generate schematyper -o schema_type.go -package mypackage schemas/schema.json
 ```
 
+```bash
+go run *.go --ptr-for-omit --package domain --out-dir domain poc20.json 
+```
+
 ## Schema Features Support
 Supports the following JSON Schema keywords:
 * `title` - sets type name
